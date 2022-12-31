@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">Weekly Pay Calculator</div>
+        <div class="wagey">
+            <label for="wage">Hourly wage :</label>
+            <input type="number" id="wage" min="0" placeholder="$0">
+        </div>
+        <div class="days">
+        
+            <div class="day">
+              <h3>Monday</h3>
+              <label for="monday-hours"></label>
+              <input type="number" id="monday-hours" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="monday-minutes"></label>
+              <input id="monday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>
+            <div class="day">
+              <h3>Tuesday</h3>
+              <label for="tuesday-hours"></label>
+              <input type="number" id="tuesday-hours" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="tuesday-minutes"></label>
+              <input id="tuesday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>
+            <div class="day">
+              <h3>Wednesday</h3>
+              <label for="wednesday-hours"></label>
+              <input id="wednesday-hours" type="number" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="wednesday-minutes"></label>
+              <input id="wednesday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>
+            <div class="day">
+              <h3>Thursday</h3>
+              <label for="thursday-hours"></label>
+              <input id="thursday-hours" type="number" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="thursday-minutes"></label>
+              <input id="thursday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>
+            <div class="day">
+              <h3>Friday</h3>
+              <label for="friday-hours"></label>
+              <input id="friday-hours" type="number" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="friday-minutes"></label>
+              <input id="friday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>
+            <div class="day">
+              <h3>Saturday</h3>
+              <label for="saturday-hours"></label>
+              <input id="saturday-hours" type="number" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="saturday-minutes"></label>
+              <input id="saturday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>
+            <div class="day">
+              <h3>Sunday</h3>
+              <label for="sunday-hours"></label>
+              <input id="sunday-hours" type="number" min="0" max="23" placeholder="Hours" oninput="validateInput(event)">
+              <label for="sunday-minutes"></label>
+              <input id="sunday-minutes" type="number" min="0" max="59" placeholder="Minutes" oninput="validateInput(event)">
+            </div>   
+        </div>
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+          <p id="result"></p>
+          <p id="results"></p>
+          <span class="close-button">&times;</span>
+        </div>
+    </div>
+    <button id="calculate-button" type="button"  onclick="calculateTotalHours()">Calculate Total</button>
+</body>
+<script src="script.js"></script>
+</html>
