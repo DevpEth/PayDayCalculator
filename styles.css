@@ -210,17 +210,27 @@ button {
         font-weight: 600;
     }
 
-}
-
-@media only screen and (max-width: 660px) {
     p#results {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        font-size: 30px;
-        font-weight: 600;
-    }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 30px;
+      font-weight: 600;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    background-color: #0095ff;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+  }
+
 
 }
 
@@ -238,7 +248,7 @@ button {
     button {
       display: flex;
       justify-content: center;
-      background-color: #85ccff;
+      background-color: #0095ff;
       border: 1px solid #fff;
       color: #fff;
       border-radius: 5px;
