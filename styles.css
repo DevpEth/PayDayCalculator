@@ -103,7 +103,6 @@ body {
 button {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     padding: 4px;
     background-color: #0095ff;
     border: 1px solid #fff;
@@ -230,10 +229,23 @@ button {
         font-weight: 800;
         font-size: 60px;
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 10px;
         color: #fff;
         text-shadow: 2px 2px 4px #000000;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      background-color: #85ccff;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 0px;
     }
 
 }
@@ -243,24 +255,11 @@ button {
         font-weight: 800;
         font-size: 45px;
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 0px;
         color: #fff;
         text-shadow: 2px 2px 4px #000000;
     }
 
-    button {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        background-color: #85ccff;
-        border: 1px solid #fff;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 0px;
-      }
 
 }
